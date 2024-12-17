@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="images_MHTT/MHTT.css" />
+    <script src="images_MHTT/MHTT.js"></script> 
+</head>
+
+<body>
+     <!-- Header -->
+     <header class="navbar">
+        <div class="menu-trigger">
+          <span>☰ Menu</span>
+        </div>
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu">
+          <ul class="menu-list">
+            <li class="dropdown">
+              <a href="#">Phim ▼</a>
+              <ul class="submenu">
+                <li><a href="#">Phim Đang Chiếu</a></li>
+                <li><a href="#">Phim Sắp Chiếu</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Thành Viên ▼</a>
+              <ul class="submenu">
+                <li><a href="#">Tài Khoản CGV</a></li>
+                <li><a href="#">Quyền Lợi Thành Viên</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Cultureplex ▼</a>
+              <ul class="submenu">
+                <li><a href="#">Quầy Online</a></li>
+                <li><a href="#">Thuê Rạp & Vé Nhóm</a></li>
+                <li><a href="#">E-CGV</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="images_MHTT/cgvlogo.png" alt="CGV Logo" />
+        </div>
+        <div class="right-section">
+          <div class="auth">
+            <a href="dang-nhap.html"><i class="fas fa-user-circle"></i></a>
+          </div>
+          <div class="language-switch">
+            <a href="#" class="active">VN</a> | <a href="#">EN</a>
+          </div>
+        </div>
+    </header>
+
+    <div class="next-button">
+      <a href="trang_chu.html" class="btn-next">
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    
+
+    <div class="container">
+        <div class="title">THANH TOÁN</div>
+
+        <!-- Discount -->
+        <div class="section">
+            <h3>MÃ GIẢM GIÁ</h3>
+            <div class="discount">
+                <div class="row" onclick="toggleContent('content1content1')">
+                  <label for="discount">Nhập mã giảm giá:</label>
+                  <input
+          type="text"
+          id="discount"
+          class="discount-input"
+          placeholder="Nhập mã giảm giá" />
+                </div>
+                <div id="content1" class="row-content" >
+
+                </div>
+              
+            </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="section">
+            <h3> HÌNH THỨC THANH TOÁN</h3>
+            <div class="payment">
+                <div class="payment-method">
+                    <div class="row">
+                        <input type="radio" id="grabpay" name="payment-method">
+                        <img src="images_MHTT/VISA (2).png" alt="ATM cardcard">
+                        <label for="atm">ATM card (Thẻ nội địa)</label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="boost" name="payment-method">
+                        <img src="images_MHTT/VISA (1).png" alt="Thẻ quốc tế">
+                        <label for="visa">Thẻ quốc tế (Visa, Master, Amex, JCB)</label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="touchngo" name="payment-method">
+                        <img src="images_MHTT/VISA (3).png" alt="MoMo">
+                        <label for="momom">   Momo - 84k/vé + quà ưu đãi</label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="shopeepay" name="payment-method">
+                        <img src="images_MHTT/VISA (6).png" alt="ShopeePay Logo">
+                        <label for="shoppeshoppe">ShopeePay - Giảm 10K cho đơn từ 100K)</label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="touchngo" name="payment-method">
+                        <img src="images_MHTT/VISA (4).png" alt="ZaloPay">
+                        <label for="zalo">ZaloPay - Giảm 10K trên 1 bill</label>
+                    <div class="row">
+                        <input type="radio" id="touchngo" name="payment-method">
+                        <img src="images_MHTT/VISA (5).png" alt="VNPay">
+                        <label for="vnpay">VN PAY - Giảm 50% cho đơn đầu tiên</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <h3> TỔNG CỘNG</h3>
+            <div class="summary">
+              <div class="paypay">
+                <a href="./Quet-ma-thanh-toan.html" class="btn-next">
+
+                  <b><span>Thanh toán</span></b></a>
+              </div>
+                
+                <div class="row">
+                    <span>Tổng cộng</span>
+                    <span>289.090,00 ₫</span>
+                </div>
+                <div class="row">
+                    <span>Khuyến mãi</span>
+                    <span>0,00 ₫</span>
+                </div>
+                <div class="row total">
+                    <span>Tổng số tiền thanh toán</span>
+                    <span>289.090,00 ₫</span>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+    <footer class="footer-section">
+        <div class="footer-top">
+          <ul class="footer-menu">
+            <li>
+              <h4>CGV Việt Nam</h4>
+              <ul>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Tiện Ích Online</a></li>
+                <li><a href="#">Thẻ Quà Tặng</a></li>
+                <li><a href="#">Tuyển Dụng</a></li>
+                <li><a href="#">Liên Hệ Quảng Cáo CGV</a></li>
+                <li><a href="#">Dành cho đối tác</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Điều khoản sử dụng</h4>
+              <ul>
+                <li><a href="#">Điều Khoản Chung</a></li>
+                <li><a href="#">Điều Khoản Giao Dịch</a></li>
+                <li><a href="#">Chính Sách Thanh Toán</a></li>
+                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+              </ul>
+            </li>
+            <li>
+              <h4>Kết nối với chúng tôi</h4>
+              <div class="social-icons">
+                <a href="#"><img src="./images_MHTT/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="./images_MHTT/youtube.png" alt="YouTube" /></a>
+                <a href="#"
+                  ><img src="./images_MHTT/instagram.png" alt="Instagram"
+                /></a>
+                <a href="#"><img src="./images_MHTT/instagram.png" alt="Zalo" /></a>
+              </div>
+              <a href="#" class="certification">
+                <img
+                  src="./images_MHTT/thongbaobocongthuong.png"
+                  alt="Đã Thông Báo Bộ Công Thương"
+                />
+              </a>
+            </li>
+            <li>
+              <h4>Chăm sóc khách hàng</h4>
+              <ul>
+                <li>Hotline: 1900 6017</li>
+                <li>Giờ làm việc: 8:00 - 22:00</li>
+                <li>Email hỗ trợ: hoidap@cgv.vn</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            <strong>CÔNG TY TNHH CJ CGV VIỆT NAM</strong><br />
+            Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày
+            31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí
+            Minh.<br />
+            Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành
+            phố Hồ Chí Minh, Việt Nam.<br />
+            Đường dây nóng (Hotline): 1900 6017<br />
+            COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
